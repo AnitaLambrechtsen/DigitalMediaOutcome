@@ -3,30 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="9099caa9-ca34-4714-bd0e-48cfaa018405" name="Changes" comment="Sprint 3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheet.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/events.html" beforeDir="false" afterPath="$PROJECT_DIR$/events.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/ballet_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/christmas1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/christmas2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/christmas3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/cinderella1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/cinderella2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/coverphoto.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/homephoto.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/matariki1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/matariki2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/matariki3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/nutcracker1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/nutcracker2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/nutcracker3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/other1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/other2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/other3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/other4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/peterpan1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/peterpan2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/peterpan3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/peterpan4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ballet_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/ballet_logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/timetable.html" beforeDir="false" afterPath="$PROJECT_DIR$/timetable.html" afterDir="false" />
     </list>
@@ -59,18 +39,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/anita/Desktop/Digital/Digital2022/DigitalMediaOutcome&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/anita/Desktop/Digital/Digital2022/DigitalMediaOutcome",
+    "list.type.of.created.stylesheet": "CSS",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -96,7 +77,7 @@
       <workItem from="1665378738920" duration="30271000" />
       <workItem from="1666290150542" duration="167000" />
       <workItem from="1667512420734" duration="499000" />
-      <workItem from="1667515631574" duration="1821000" />
+      <workItem from="1667515631574" duration="6399000" />
     </task>
     <task id="LOCAL-00001" summary="Sprint 1">
       <created>1665567494071</created>
