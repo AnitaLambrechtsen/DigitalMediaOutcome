@@ -1,0 +1,57 @@
+[
+  [
+    {
+      "Day": "Monday",
+      "Classes": {
+        "Grade 4": "3:45pm-4:45pm",
+        "Intermediate": "4:45pm-6:00pm"
+      }
+    },
+    {
+      "Day": "Tuesday",
+      "Classes": {
+        "Grade 2": "3:45pm-4:45pm",
+        "Intermediate Foundation": "4:45pm-5:45pm",
+        "Scholars": "6:00pm-7:30pm"
+      }
+    },
+    {
+      "Day": "Wednesday",
+      "Classes": {
+        "Grade 5": "4:00pm-5:00pm",
+        "Scholars": "5:00pm-6:30pm"
+      }
+    },
+    {
+      "Day": "Thursday",
+      "Classes": {
+        "Grade 3": "3:45pm-4:45pm",
+        "Intermediate Foundation": "4:45pm-5:45pm",
+        "Advanced Foundation": "5:45pm-7:00pm"
+      }
+    }
+  ],
+  [
+    {
+      "Day": "Friday",
+      "Classes": {
+        "Grade 5": "4:00pm-5:00pm",
+        "Intermediate": "5:00pm-6:00pm",
+        "Scholars": "6:00pm-7:30pm"
+      }
+    },
+    {
+      "Day": "Saturday",
+      "Classes": {
+        "Grade 1": "10:00am-10:45am",
+        "Scholars": "11:00am-1:00pm"
+      }
+    },
+    {
+      "Day": "Sunday",
+      "Classes": {
+        "Exam classes": "10:00am-3:00pm"
+      }
+    }
+  ]
+]

@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <!-- Load bootstrap css, jquery and bootstrap javascript -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
@@ -17,32 +18,32 @@
     <link href="css/stylesheet.css" rel="stylesheet">
 
 </head>
-<body>
+<body onload="get_data();">
+
 <div class="bg-teal">
-    <div class="pad-container-hero"></div>
-    <div class="row">
-        <div class="col-lg-6 d-flex justify-content-center">
-            <img src="img/ballet_logo.png" alt="Logo" class="logo">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-teal">
+       <div> <img class="ms-auto logo" src="img/ballet_logo.png" alt="Logo" class="logo" style="max-width:100%;"> </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-right justify-content-end" id="navbarSupportedContent">
+            <ul class="nav navbar-nav navbar-right pad-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html"><h3>HOME</h3></a></li>
+                <li class="nav-item"><a class="nav-link" href="events.html"><h3>EVENTS</h3></a></li>
+                <li class="nav-item"><a class="nav-link" href="timetable.html"><h3>TIMETABLE</h3></a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html"><h3>CONTACT</h3></a></li>
+            </ul>
         </div>
-        <div class="col-lg-6 d-flex justify-content-center">
-            <nav class="navbar navbar-expand-md navbar-dark">
-                <ul class="nav navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html"><h3>HOME</h3></a></li>
-                    <li class="nav-item"><a class="nav-link" href="events.html"><h3>EVENTS</h3></a></li>
-                    <li class="nav-item"><a class="nav-link" href="timetable.html"><h3>TIMETABLE</h3></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><h3>DANCERS</h3></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><h3>CONTACT</h3></a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
 
-<div class="pad-main-body">
+<div class="pad-main-body" id="timetable_body">
     <div class="h1"><u>TIMETABLE</u></div>
-    <p>At Tarrant Dance Studios, we teach from Primary to Advanced level Ballet. We
+    <p></p>
+    <h4>At Tarrant Dance Studios, we teach from Primary to Advanced level Ballet. We
         follow the Royal Academy of Dance Examinations and schedule, and most students will choose to sit their
-        RAD exams in the second-half of the year (although these examinations are not compulsory).
+        RAD exams in the second-half of the year (although these examinations are not compulsory). </h4>
+    <p>
         The stages of ballet we teach follow in the descending order, Primary, Grades 1-5,
         Intermediate Foundation, Intermediate, Advanced Foundation, Advanced 1 and Advanced 2.
         The minimum age to join our primary class is 5 years old. From here, the minimum age to complete
@@ -51,58 +52,195 @@
         ballet, they will be appropriately placed based on their age. Our Scholar's classes are
         for those at Intermediate level or above.</p>
     <br>
-    <div>
-        <div class="row">
-            <div class="col-lg-3">
-                <h2><u>Monday</u></h2>
-                <p>Grade 4: <i>3:45pm-4:45pm</i><br>Intermediate: <i>4:45pm-6:00pm</i></p>
-            </div>
-            <div class="col-lg-3">
-                <h2><u>Tuesday</u></h2>
-                <p>Grade 2: <i>3:45pm-4:45pm</i><br> Intermediate Foundation: <i>4:45pm-5:45pm</i><br>Scholars:
-                    <i>6:00pm-7:30pm</i></p>
-            </div>
-            <div class="col-lg-3">
-                <h2><u>Wednesday</u></h2>
-                <p>Grade 5: <i>4:00pm-5:00pm</i><br> Scholars: <i>5:00pm-6:30pm</i></p>
-            </div>
-            <div class="col-lg-3">
-                <h2><u>Thursday</u></h2>
-                <p>Grade 3: <i>3:45pm-4:45pm</i><br>Intermediate Foundation: <i>4:45pm-5:45pm</i>
-                    <br> Advanced Foundation: <i>5:45pm-7:00pm</i>
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3">
-                <h2><u>Friday</u></h2>
-                <p>Grade 5: <i>4:00pm-5:00pm</i> <br> Intermediate: <i>5:00pm-6:00pm</i>
-                    <br> Scholars: <i>6:00pm-7:30pm</i> </p>
-            </div>
-            <div class="col-lg-3">
-                <h2><u>Saturday</u></h2>
-                <p>Grade 1: <i>10:00am-10:45am</i> <br> Scholars: <i>11:00am-1:00pm</i></p>
-            </div>
-            <div class="col-lg-3">
-                <h2><u>Sunday</u></h2>
-                <p>Exam classes</p>
-            </div>
-        </div>
-    </div>
+    <!-- Timetable row with columns, buttons and collapse -->
+
+    <!--        <div class="row">-->
+    <!--            &lt;!&ndash;Column&ndash;&gt;-->
+    <!--            <div class="col-lg-3">-->
+    <!--                &lt;!&ndash;Button with classes for Bootstrap button, background colour, hover styles and font&ndash;&gt;-->
+    <!--                <button class="btn bg-lightblue timetable button" type="button" data-toggle="collapse"-->
+    <!--                        data-target="#Monday" aria-expanded="false" aria-controls="Monday">Monday</button>-->
+    <!--                &lt;!&ndash;Collapse&ndash;&gt;-->
+    <!--                <div class="collapse multi-collapse" id="Monday">-->
+    <!--                    <div class="card card-body">-->
+    <!--                        &lt;!&ndash;Information that can be collapsed and opened&ndash;&gt;-->
+    <!--                        <p>Grade 4: <i>3:45pm-4:45pm</i><br>Intermediate: <i>4:45pm-6:00pm</i></p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--            &lt;!&ndash;Repeat with each day of the week&ndash;&gt;-->
+    <!--            <div class="col-lg-3">-->
+    <!--                <button class="btn bg-lightblue timetable button" type="button" data-toggle="collapse"-->
+    <!--                        data-target="#Tuesday" aria-expanded="false" aria-controls="Tuesday">Tuesday</button>-->
+    <!--                <div class="collapse multi-collapse" id="Tuesday">-->
+    <!--                    <div class="card card-body">-->
+    <!--                        <p>Grade 2: <i>3:45pm-4:45pm</i><br> Intermediate Foundation: <i>4:45pm-5:45pm</i><br>Scholars:-->
+    <!--                            <i>6:00pm-7:30pm</i></p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--            <div class="col-lg-3">-->
+    <!--                <button class="btn bg-lightblue timetable button" type="button" data-toggle="collapse"-->
+    <!--                        data-target="#Wednesday" aria-expanded="false" aria-controls="Wednesday">Wednesday</button>-->
+    <!--                <div class="collapse multi-collapse" id="Wednesday">-->
+    <!--                    <div class="card card-body">-->
+    <!--                        <p>Grade 5: <i>4:00pm-5:00pm</i><br> Scholars: <i>5:00pm-6:30pm</i></p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--            <div class="col-lg-3">-->
+    <!--                <button class="btn bg-lightblue timetable button" type="button" data-toggle="collapse"-->
+    <!--                        data-target="#Thursday" aria-expanded="false" aria-controls="Thursday">Thursday</button>-->
+    <!--                <div class="collapse multi-collapse" id="Thursday">-->
+    <!--                    <div class="card card-body">-->
+    <!--                        <p>Grade 3: <i>3:45pm-4:45pm</i><br>Intermediate Foundation: <i>4:45pm-5:45pm</i>-->
+    <!--                            <br> Advanced Foundation: <i>5:45pm-7:00pm</i>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--            </div>-->
+    <!--            <br>-->
+    <!--        <div class="row">-->
+    <!--            <div class="col-lg-3">-->
+    <!--                <button class="btn bg-lightblue timetable button" type="button" data-toggle="collapse" data-target="#Friday" aria-expanded="false" aria-controls="Friday">Friday</button>-->
+    <!--                <div class="collapse multi-collapse" id="Friday">-->
+    <!--                    <div class="card card-body">-->
+    <!--                        <p>Grade 5: <i>4:00pm-5:00pm</i> <br> Intermediate: <i>5:00pm-6:00pm</i>-->
+    <!--                            <br> Scholars: <i>6:00pm-7:30pm</i> </p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--            <div class="col-lg-3">-->
+    <!--                <button class="btn bg-lightblue timetable button" type="button" data-toggle="collapse" data-target="#Saturday" aria-expanded="false" aria-controls="Saturday">Saturday</button>-->
+    <!--                <div class="collapse multi-collapse" id="Saturday">-->
+    <!--                    <div class="card card-body">-->
+    <!--                        <p>Grade 1: <i>10:00am-10:45am</i> <br> Scholars: <i>11:00am-1:00pm</i></p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--            <div class="col-lg-3">-->
+    <!--                <button class="btn bg-lightblue timetable button" type="button" data-toggle="collapse" data-target="#Sunday" aria-expanded="false" aria-controls="Sunday">Sunday</button>-->
+    <!--                <div class="collapse multi-collapse" id="Sunday">-->
+    <!--                    <div class="card card-body">-->
+    <!--                        <p>Exam classes</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+
 </div>
 
+<script>
+
+    // Using example from:
+    // https://www.encodedna.com/javascript/fetch-data-from-json-file-display-in-table-using-async-and-await.htm
+
+    let arrTimetable;
+    let get_data = async() => {
+        let url = "timetable.json";
+        let opts = { headers: { 'mode':'no-cors' }};
+        let response = await fetch (url, opts);
+        arrTimetable = await response.json();
+        make_the_table();		// convert data to table.
+    }
+
+    let make_the_table = () => {
+        // Get document table body
+        const divTableBody = document.getElementById('timetable_body');
+
+        // Loop through rows
+        for (let i = 0; i < arrTimetable.length; i++) {
+
+            // Create column
+            let div_row = document.createElement('div');
+            div_row.setAttribute('class', 'row');
+            div_row.innerHTML = "";
+
+            // Loop through items in the row
+            for (let j = 0; j < arrTimetable[i].length; j++) {
+
+                // Day of week
+                let day = arrTimetable[i][j]['Day'];
+
+                // Class String
+                let class_string = '';
+                let class_last_item = Object.keys(arrTimetable[i][j]['Classes']).pop();
+                for (let grade in arrTimetable[i][j]['Classes']) {
+                    let class_time = arrTimetable[i][j]['Classes'][grade];
+                    class_string += `${grade}: <i>${class_time}</i>`
+                    // Don't add br at the end
+                    if (grade !== class_last_item){
+                        class_string += '<br>'
+                    }
+                }
+
+                // Create P from class string
+                let p_string = document.createElement('p');
+                p_string.innerHTML = class_string
+
+                // Create div card from P
+                let div_card = document.createElement('div');
+                div_card.setAttribute('class', 'card card-body');
+                div_card.innerHTML = "";
+                div_card.appendChild(p_string);
+
+                // Create div collapse from div card
+                let div_collapse = document.createElement('div');
+                div_collapse.setAttribute('class', 'collapse multi-collapse');
+                div_collapse.id = day;
+                div_collapse.innerHTML = "";
+                div_collapse.appendChild(div_card);
+
+                // Create button
+                let button_collapse = document.createElement('button');
+                button_collapse.setAttribute('class', 'btn bg-lightblue timetable button');
+                button_collapse.setAttribute('type', 'button');
+                button_collapse.setAttribute('data-toggle', 'collapse');
+                button_collapse.setAttribute('data-target', `#${day}`);
+                button_collapse.setAttribute('aria-expanded', 'false');
+                button_collapse.setAttribute('aria-controls', day );
+                button_collapse.innerHTML = day;
+
+                // Create div item from button and collapse
+                let div_item = document.createElement('div');
+                div_item.setAttribute('class', 'col-lg-3');
+                div_item.innerHTML = "";
+                div_item.appendChild(button_collapse);
+                div_item.appendChild(div_collapse);
+
+                // Append column to row
+                div_row.appendChild(div_item);
+
+            }
+
+            // Add column to table
+            divTableBody.appendChild(div_row);
+            // Add a br if not last item
+            if (i !== arrTimetable.length){
+                divTableBody.appendChild(document.createElement('br'));
+            }
+        }
+    }
+
+
+    // document.onload = get_data;
+</script>
 
 <div class="pad-footer bg-black fg-grey">
-    <div class="row">
-        <div class="col-lg-6">
-            <p style="font-size: 0.75em;">©TARRANT DANCE STUDIOS 2022</p>
+    <div class="row ">
+        <div class="col-sm">
+            <h5>©TARRANT DANCE STUDIOS 2022</h5>
         </div>
-        <div class="col-lg-6 text-right">
-            <p style="font-size: 0.75em;">WEBSITE DESIGNED BY ANITA LAMBRECHTSEN
-            </p>
+        <div class="col-sm d-flex justify-content-center align-middle">
+            <a href="https://www.facebook.com/people/Tarrant-Dance-Studios/100057598083938/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/tarrantdancestudios/" class="fa fa-instagram"></a>
+        </div>
+        <div class="col-sm text-right">
+            <h5>WEBSITE DESIGNED BY ANITA LAMBRECHTSEN</h5>
         </div>
     </div>
 </div>
+
 
 </body>
 

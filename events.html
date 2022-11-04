@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <!-- Load bootstrap css, jquery and bootstrap javascript -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
@@ -18,47 +19,51 @@
 
 </head>
 <body>
-
-
 <div class="bg-teal">
-    <div class="pad-container-hero"></div>
-    <div class="row">
-        <div class="col-lg-6 d-flex justify-content-center">
-            <img src="img/ballet_logo.png" alt="Logo" class="logo">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-teal">
+      <div>  <img src="img/ballet_logo.png" alt="Logo" class="logo" style="max-width:100%;"> </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-right justify-content-end" id="navbarSupportedContent">
+            <ul class="nav navbar-nav navbar-right pad-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html"><h3>HOME</h3></a></li>
+                <li class="nav-item"><a class="nav-link" href="events.html"><h3>EVENTS</h3></a></li>
+                <li class="nav-item"><a class="nav-link" href="timetable.html"><h3>TIMETABLE</h3></a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html"><h3>CONTACT</h3></a></li>
+            </ul>
         </div>
-        <div class="col-lg-6 d-flex justify-content-center">
-            <nav class="navbar navbar-expand-md navbar-dark">
-                <ul class="nav navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html"><h3>HOME</h3></a></li>
-                    <li class="nav-item"><a class="nav-link" href="events.html"><h3>EVENTS</h3></a></li>
-                    <li class="nav-item"><a class="nav-link" href="timetable.html"><h3>TIMETABLE</h3></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><h3>DANCERS</h3></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><h3>CONTACT</h3></a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
 
+
 <div class="pad-main-body">
-    <div class="h1"><u>PAST PRODUCTIONS</u></div>
+    <div class="h1">PAST PRODUCTIONS</div>
+    <hr>
     <br>
     <div class="row">
         <div class="col-lg-6">
             <h2>CINDERELLA - 2021</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt id aliquet risus feugiat in ante metus dictum. Vestibulum lorem sed risus ultricies tristique nulla aliquet. Arcu cursus euismod quis viverra.</p>
+            <p>A classic story told through our own lens at the Wellington Opera House. Through the leads of Cinderella,
+                The Prince, her Evil Step Mother and Step Sisters, The Fairy Godmother and her three accompanying
+                Fairies, this tale was able to delightfully come to life. </p>
         </div>
         <div class="col-lg-6">
-            <div id="cinderella-carousel" class="carousel slide" data-ride="carousel">
+            <div id="cinderella-carousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                <ol class="carousel-indicators">
+                    <li data-target="#cinderella-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#cinderella-carousel" data-slide-to="1"></li>
+                    <li data-target="#cinderella-carousel" data-slide-to="2"></li>
+                </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="img/cinderella1.jpg" alt="First slide">
+                        <img class="d-block w-100" src="img/cinderella1.jpg" alt="Photo of Cinderella and Mice">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="img/coverphoto.jpg" alt="Second slide">
+                        <img class="d-block w-100" src="img/coverphoto.jpg" alt="Photo of dancers backstage">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="img/cinderella2.jpg" alt="Third slide">
+                        <img class="d-block w-100" src="img/cinderella2.jpg" alt="Photo of Fairy Godmother">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#cinderella-carousel" role="button" data-slide="prev">
@@ -75,19 +80,21 @@
     <br>
     <div class="row">
         <div class="col-lg-6">
-            <div id="peterpan-carousel" class="carousel slide" data-ride="carousel">
+            <div id="peterpan-carousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                <ol class="carousel-indicators">
+                    <li data-target="#peterpan-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#peterpan-carousel" data-slide-to="1"></li>
+                    <li data-target="#peterpan-carousel" data-slide-to="2"></li>
+                </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="img/peterpan1.jpg" alt="First slide">
+                        <img class="d-block w-100" src="img/peterpan1.jpg" alt="Photo of Tinkerbell in the air">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="img/peterpan2.jpg" alt="Second slide">
+                        <img class="d-block w-100" src="img/peterpan2.jpg" alt="Photo of crocodile dancers">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="img/peterpan3.jpg" alt="Third slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="img/peterpan4.jpg" alt="Fourth slide">
+                        <img class="d-block w-100" src="img/peterpan4.jpg" alt="Photo of Peter Pan and Wendy">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#peterpan-carousel" role="button" data-slide="prev">
@@ -102,29 +109,37 @@
         </div>
         <div class="col-lg-6">
             <h2>PETER PAN - 2020</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt id aliquet risus feugiat in ante metus dictum. Vestibulum lorem sed risus ultricies tristique nulla aliquet. Arcu cursus euismod quis viverra.</p>
+            <p>With a ballet focus on this childhood story, our audience at both the Wellington Opera House and
+                the Wellington Botanical Gardens, were able to witness Peter Pan, Tinkerbell, Wendy and her brothers, fly
+                across the stage in this magical performance. Just make sure to stand well away from the menacing
+                crocodile!</p>
         </div>
     </div>
     <br>
     <div class="row">
         <div class="col-lg-6">
             <h2>THE NUTCRACKER - 2019</h2>
-            <p>Tarrant Dance Studios is located in Wellington under the Principal, Deirdre Tarrant.
-                Tarrant Dance Studios is located in Wellington under the Principal, Deirdre Tarrant.
-                Tarrant Dance Studios is located in Wellington under the Principal, Deirdre Tarrant.
-                Tarrant Dance Studios is located in Wellington under the Principal, Deirdre Tarrant.</p>
+            <p>For a ballet and Christmas favourite, our performance of The Nutcracker took place at both
+                the Hannah Playhouse and Welly Christmas. Following the adventures of Clara, the Sugar Plum Fairy
+                and the Nutcracker were able to guide her through the fantasy land filled with Russian Fudge to
+                Turkish Delights.</p>
         </div>
         <div class="col-lg-6">
-            <div id="nutcracker-carousel" class="carousel slide" data-ride="carousel">
+            <div id="nutcracker-carousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                <ol class="carousel-indicators">
+                    <li data-target="#nutcracker-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#nutcracker-carousel" data-slide-to="1"></li>
+                    <li data-target="#nutcracker-carousel" data-slide-to="2"></li>
+                </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="img/nutcracker1.jpg" alt="First slide">
+                        <img class="d-block w-100" src="img/nutcracker1.jpg" alt="Photo of Fritz holding the Nutcracker">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="img/nutcracker2.jpg" alt="Second slide">
+                        <img class="d-block w-100" src="img/nutcracker2.jpg" alt="Photo of candy dancers">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="img/nutcracker3.jpg" alt="Third slide">
+                        <img class="d-block w-100" src="img/nutcracker3.jpg" alt="Photo of Mother Ginger">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#nutcracker-carousel" role="button" data-slide="prev">
@@ -144,23 +159,34 @@
 
 <div class="bg-lightblue">
     <div class="pad-main-body">
-        <h1 style="padding-bottom: 20px;"><u>OTHER PERFORMANCES</u></h1>
+        <h1>OTHER PERFORMANCES</h1>
+        <hr>
+        <br>
         <div class="row">
             <div class="col-lg-6">
                 <h2>WELLY CHRISTMAS</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt id aliquet risus feugiat in ante metus dictum. Vestibulum lorem sed risus ultricies tristique nulla aliquet. Arcu cursus euismod quis viverra.</p>
+                <p>An annual Christmas event in Wellington City is one that Tarrant Dance Studios
+                    is actively involved in. As well as participating in the famed Christmas Parade,
+                    the dancers are also given the opportunity to dance on the temporary stage during the event.</p>
             </div>
             <div class="col-lg-6">
-                <div id="christmas-carousel" class="carousel slide" data-ride="carousel">
+                <div id="christmas-carousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                    <ol class="carousel-indicators">
+                        <li data-target="#christmas-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#christmas-carousel" data-slide-to="1"></li>
+                        <li data-target="#christmas-carousel" data-slide-to="2"></li>
+                    </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="img/christmas1.jpg" alt="First slide">
+                            <img class="d-block w-100" src="img/christmas1.jpg" alt="Photo of dancers with Santa in
+                                                                                    the parade">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="img/christmas2.jpg" alt="Second slide">
+                            <img class="d-block w-100" src="img/christmas2.jpg" alt="Photo of reindeer dancers">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="img/christmas3.jpg" alt="Third slide">
+                            <img class="d-block w-100" src="img/christmas3.jpg" alt="Photo of Sugar Plum Fairy
+                                                                                    in performance at Welly Christmas">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#christmas-carousel" role="button" data-slide="prev">
@@ -178,16 +204,21 @@
         <br>
         <div class="row">
             <div class="col-lg-6">
-                <div id="matariki-carousel" class="carousel slide" data-ride="carousel">
+                <div id="matariki-carousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                    <ol class="carousel-indicators">
+                        <li data-target="#matariki-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#matariki-carousel" data-slide-to="1"></li>
+                        <li data-target="#matariki-carousel" data-slide-to="2"></li>
+                    </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="img/matariki1.jpg" alt="First slide">
+                            <img class="d-block w-100" src="img/matariki1.jpg" alt="Photo of fish performers">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="img/matariki2.jpg" alt="Second slide">
+                            <img class="d-block w-100" src="img/matariki2.jpg" alt="Photo of night performance">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="img/matariki3.jpg" alt="Third slide">
+                            <img class="d-block w-100" src="img/matariki3.jpg" alt="Photo of dancers standing together">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#matariki-carousel" role="button" data-slide="prev">
@@ -203,7 +234,10 @@
             </div>
             <div class="col-lg-6">
                 <h2>MATARIKI</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt id aliquet risus feugiat in ante metus dictum. Vestibulum lorem sed risus ultricies tristique nulla aliquet. Arcu cursus euismod quis viverra.</p>
+                <p>The Wellington Matariki ki Pōneke celebration is also an annual event that Tarrant
+                    Dance Studios is involved in. With a combination of parades, dancing and improvisation,
+                    the senior dancers are often able to participate in this celebration of
+                    a new year in the Māori lunar calendar.</p>
             </div>
         </div>
 
@@ -211,22 +245,28 @@
         <div class="row">
             <div class="col-lg-6">
                 <h2>OTHER</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt id aliquet risus feugiat in ante metus dictum. Vestibulum lorem sed risus ultricies tristique nulla aliquet. Arcu cursus euismod quis viverra.</p>
+                <p>Tarrant Dance Studios is also involved with a range of other performances and events
+                    including Chinese New Year Festivals (image one) and Artsplash performances (image two).
+                    Dancers also have occasional opportunities to do contemporary dancing, from which
+                    these past few years a contemporary performance has accompanied productions (image three)
+                    with focuses ranging from Covid-19 to climate change.</p>
             </div>
             <div class="col-lg-6">
-                <div id="other-carousel" class="carousel slide" data-ride="carousel">
+                <div id="other-carousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                    <ol class="carousel-indicators">
+                        <li data-target="#other-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#other-carousel" data-slide-to="1"></li>
+                        <li data-target="#other-carousel" data-slide-to="2"></li>
+                    </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="img/other1.jpg" alt="First slide">
+                            <img class="d-block w-100" src="img/other1.jpg" alt="Photo from Chinese New Year">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="img/other2.jpg" alt="Second slide">
+                            <img class="d-block w-100" src="img/other2.jpg" alt="Photo from Artsplash">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="img/other3.jpg" alt="Third slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="img/other4.jpg" alt="Third slide">
+                            <img class="d-block w-100" src="img/other3.jpg" alt="Photo from contemporary performance">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#other-carousel" role="button" data-slide="prev">
@@ -238,24 +278,28 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
-                </div>
             </div>
         </div>
-        <br>
     </div>
+    <br>
+</div>
 
 <!-- Footer -->
 <div class="pad-footer bg-black fg-grey">
-    <div class="row">
-        <div class="col-lg-6">
-            <p style="font-size: 0.75em;">©TARRANT DANCE STUDIOS 2022</p>
+    <div class="row ">
+        <div class="col-sm">
+            <h5>©TARRANT DANCE STUDIOS 2022</h5>
         </div>
-        <div class="col-lg-6 text-right">
-            <p style="font-size: 0.75em;">WEBSITE DESIGNED BY ANITA LAMBRECHTSEN
-            </p>
+        <div class="col-sm d-flex justify-content-center align-middle">
+            <a href="https://www.facebook.com/people/Tarrant-Dance-Studios/100057598083938/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/tarrantdancestudios/" class="fa fa-instagram"></a>
+        </div>
+        <div class="col-sm text-right">
+            <h5>WEBSITE DESIGNED BY ANITA LAMBRECHTSEN</h5>
         </div>
     </div>
 </div>
+
 
 </body>
 </html>
